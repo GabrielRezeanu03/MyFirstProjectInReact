@@ -1,0 +1,114 @@
+.pricing {
+  width: 100%;
+  padding: 6rem 1rem;
+  background-color: black;
+}
+
+.card-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-container .card {
+  border: 1px solid rgb(55, 55, 55);
+  color: rgb(55, 55, 55);
+  background-color: black;
+}
+
+.card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.card .bar {
+  border-bottom: 1px solid rgb(55, 55, 55);
+  width: 10%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.card .dollar {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.pricing p {
+  color: #eee;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.card .btn {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#silverbutton {
+  transform: translate( 0% , 615%);
+}
+
+#goldbutton {
+  transform: translate( 0% , 205%);
+}
+
+@media screen and (max-width: 980px) {
+  .card-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+.pricing p:hover {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+#goldcard p:hover {
+  color: yellow;
+}
+
+#silvercard p:hover {
+  color: rgb(99, 96, 96);
+}
+
+#diamondcard p:hover {
+  color: rgb(103, 202, 255);
+}
+
+#silvercard h3:hover {
+  cursor: pointer;
+  font-size: 1.9rem;
+}
+
+#goldcard h3:hover {
+  cursor: pointer;
+  font-size: 1.9rem;
+}
+
+#diamondcard h3:hover {
+  cursor: pointer;
+  font-size: 1.9rem;
+}
+
+#goldcard h3 {
+  color: rgb(201, 201, 41);
+}
+
+#silvercard h3 {
+  color: silver;
+}
+
+#diamondcard h3 {
+  color: rgb(103, 202, 255);
+}

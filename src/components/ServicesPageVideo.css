@@ -1,0 +1,115 @@
+#zbarvid {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .zbargirl-video {
+    height: 120vh;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    padding-bottom: 300px
+  }
+  
+  @media screen and (max-width: 640px) {
+    .content h1 {
+      font-size: 3rem;
+    }
+  
+    .content p {
+      font-size: 1.4rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+  
+  .heading {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 500px;
+  }
+
+ 
+  .zbargirl-video h1 {
+    font-size: 4rem;
+    margin-top: 200px;
+  }
+  
+  .zbargirl-video p {
+    font-size: 1.4rem;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .zbargirl-video h1 {
+      font-size: 2rem;
+    }
+  }
+  
+
+.wrapper {
+  display: flex;
+  margin-top: 100px;
+}
+
+.wrapper .static-txt {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+  font-weight: 700;
+}
+
+@keyframes slide{
+  100%{
+    top: -360px
+  }
+  
+}
+
+.dynamic-txts li{
+  position: relative;
+}
+
+.dynamic-txts li::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 5px solid #fff;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+
+
